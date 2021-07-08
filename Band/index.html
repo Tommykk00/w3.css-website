@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#band" class="w3-button w3-bar-item">Band</a>
+  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="wu1.png"
+  style="width:100%">
+  <img class="mySlides" src="wu2.jpg"
+  style="width:100%">
+  <img class="mySlides" src="wu3.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">WU-TANG CLAN</h2>
+  <p class="w3-opacity"><i>We love to rap</i></p>
+  <p class="w3-justify">Wu-Tang Clan is an American hip hop group formed on Staten Island, New York City, in 1992. Its original members include RZA, GZA, Ol' Dirty Bastard, Method Man, Raekwon, Ghostface Killah, Inspectah Deck, U-God, and Masta Killa. Close affiliate Cappadonna later became an official member. Wu-Tang Clan are regarded as a highly influential group in hip hop, helping to popularize and develop the East Coast hip hop and hardcore hip hop styles.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>GZA</p>
+    <img src="GZA.jpg" alt="Random Name" style="width:100%">
+    <p>Gary Earl Grice</p>
+  </article>
+  <article class="w3-third">
+    <p>Method Man</p>
+    <img src="methodman.jpg" alt="Random Name" style="width:100%">
+    <p>Clifford Smith Jr.</p>
+  </article>
+  <article class="w3-third">
+    <p>Ol' Dirty Bastard</p>
+    <img src="bastard.jpg" alt="Random Name" style="width:100%">
+    <p>Russell Tyrone Jones</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
